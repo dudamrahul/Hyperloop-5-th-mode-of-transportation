@@ -1,0 +1,93 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('future.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+select, input[type="text"], button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.download-button {
+  background-color: #008CBA;
+}
+
+.download-button:hover {
+  background-color: #007BB5;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#result table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#result table th,
+#result table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#result table th {
+  background-color: #f2f2f2;
+}

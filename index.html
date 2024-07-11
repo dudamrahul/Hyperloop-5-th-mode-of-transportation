@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking Form</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  Book Your Ticket
+</header>
+<div class="container">
+  <h2>Enter Passenger Details</h2>
+  <form id="myForm">
+    <label for="passengerName">Name:</label>
+    <input type="text" id="passengerName" placeholder="Enter name..." required>
+    <label for="option1">From:</label>
+    <select id="option1" required>
+      <option value="">Select</option>
+      <option value="Ameerpet">Ameerpet</option>
+      <option value="Begumpet">Begumpet</option>
+      <option value="KPHP">KPHP</option>
+      <option value="Madhapur">Madhapur</option>
+      <option value="Gachibowli">Gachibowli</option>
+      <option value="Hitec City">Hitec City</option>
+    </select>
+    <label for="option2">Destination:</label>
+    <select id="option2" required>
+      <option value="">Select</option>
+      <option value="Ameerpet">Ameerpet</option>
+      <option value="Begumpet">Begumpet</option>
+      <option value="KPHP">KPHP</option>
+      <option value="Madhapur">Madhapur</option>
+      <option value="Gachibowli">Gachibowli</option>
+      <option value="Hitec City">Hitec City</option>
+    </select>
+    <button type="button" onclick="getFareAndDistance()">Check Fare and Distance</button>
+    <button type="button" class="download-button" onclick="promptPasswordAndDownload()">Download Passenger Data</button>
+    <button type="button" onclick="downloadTicket()">Download Ticket</button>
+  </form>
+  <div id="result"></div>
+</div>
+<footer>
+  &copy; 2024 Book Your Ticket. All rights reserved.
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
